@@ -40,15 +40,15 @@ def get_user_input():
 def main():
     (length,use_uppercase_letters,use_lowercase_letters,use_numbers,use_punctuations)=get_user_input()
     (password_length,password_use_uppercase_letters,password_use_lowercase_letters,password_use_numbers,password_use_punctuations)= generate_password(length,use_uppercase_letters,use_lowercase_letters,use_numbers,use_punctuations)
-    if password_length=='yes':
+    if password_length:
         print("Generated Password:", password_length)
-    if password_use_uppercase_letters=='yes':
+    if password_use_uppercase_letters:
         print("Generated password:",password_use_uppercase_letters)
-    if password_use_lowercase_letters=='yes':
+    if password_use_lowercase_letters:
         print("Generated password:",password_use_lowercase_letters)
-    if password_use_numbers=='yes':
+    if password_use_numbers:
         print("Generated password:",password_use_numbers)
-    if password_use_punctuations=='yes':
+    if password_use_punctuations:
         print("Generated password:",password_use_punctuations)
 if __name__ == "__main__":
     main()   
